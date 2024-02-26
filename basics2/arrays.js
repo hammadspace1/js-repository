@@ -9,25 +9,25 @@ let arr1 = ["hammad", "Khan","tordher"]
 
 // console.log(arr1)
 
-arr1.push("12345")
+// arr1.push("12345")
 
 // console.log(arr1)
 
-arr1.pop()
+// arr1.pop()
 
 // console.log(arr1)
 
-let arr2 = arr1.slice(1,3)
+// let arr2 = arr1.slice(1,3)
 
 // console.log(arr2)
 // console.log(arr1)
 
-let arr3 = arr1.splice(1,3)
+// let arr3 = arr1.splice(1,3)
 
 // console.log(arr3)
 // console.log(arr1)
 
-arr1.push("khan","tordher","12346")
+// arr1.push("khan","tordher","12346")
 
 // console.log(arr1)
 console.log(arr1[3])
