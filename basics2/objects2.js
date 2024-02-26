@@ -28,3 +28,13 @@ console.log(Object.values(usr))
 console.log(Object.entries(usr))
 
 console.log(usr.hasOwnProperty("Email"))
+
+const course = {
+    courseName: "JavaScript",
+    institute: "Ezitech",
+    location: "rawalpindi"
+}
+
+const {courseName: mychoiceName} = course
+
+console.log(mychoiceName)
