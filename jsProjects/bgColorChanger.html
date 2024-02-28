@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgroud Color Changer</title>
+    <style>
+        .main{
+            border: 1px solid black;
+            width: 200px;
+            height: 700px;
+        }
+        .width{
+            width: 60px;
+            height:60px;
+            border: 1px solid green;
+        }
+        .grey{
+            background-color: gray;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .white{
+            background-color: white;
+        }
+        .orange{
+            background-color: orange;
+        }
+        .green{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h2>Color Switcher</h2>
+    <div class="main">
+        <div class="width grey button"></div>
+        <div class="width blue button"></div>
+        <div class="width white button"></div>
+        <div class="width orange button"></div>
+        <div class="width green button"></div>
+    </div>
+</body>
+<script>
+    const buttons = document.querySelectorAll(".button");
+    const body = document.querySelector('body')
+
+    buttons.forEach(function(button){
+        button.addEventListner('click', function(e){
+            if(e.target.class === 'grey'){
+                body.style.backgroundColor = e.target.id
+            }
+            if(e.target.class === 'blue'){
+                body.style.backgroundColor = e.target.id
+            }
+            if(e.target.class === 'white'){
+                body.style.backgroundColor = e.target.id
+            }
+            if(e.target.class === 'orange'){
+                body.style.backgroundColor = e.target.id
+            }
+            if(e.target.class === 'green'){
+                body.style.backgroundColor = e.target.id
+            }
+        })
+    })
+</script>
+</html>
