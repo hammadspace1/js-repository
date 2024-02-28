@@ -44,3 +44,7 @@
 // }
 
 // console.log(returnSecondName(array))
+
+(function hello(){
+    console.log("Hello World!...")
+})()                     //Immidiatly Invoked Function Expression

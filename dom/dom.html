@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLi(name){
+        const li = document.createElement('li');
+        li.innerHTML = `${name}`;
+        document.querySelector('.language').appendChild(li);
+    }
+    const newlang = prompt("Enter New Language Name ")
+    addLi(newlang)
+</script>
+</html>
