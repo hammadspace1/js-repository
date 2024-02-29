@@ -4,22 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>readDataFromAPI</title>
+    <style>
+        .main{
+            width:200px;
+            height:300px;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
+    <div class="main"></div>
 
     
 </body>
 <script>
-    const xml = new XMLHttpRequest()
-    const api = 'https://api.github.com/users/hammadspace1';
-    xml.open('GET',api);
-    xml.onreadystatechange = function(){
-        if(xml.readyState === 4){
+    const url = 'https://api.github.com/users/hiteshchoudhary'
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET',url)
+    xhr.onreadystatechange = function(){
+        if(xhr.readyState === 4){
             const data = JSON.parse(this.responseText);
-            console.log(`UserName is ${data.name}
-            This account has been Created on ${data.created_at}`)
+            document.querySelector('.main').style.backgroundImage = 'url("' + data.avatar_url + '")';
         }
     }
-    xml.send();
+    xhr.send();
 </script>
 </html>
