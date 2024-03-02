@@ -1,16 +1,43 @@
-const userData = {
-    Name: "Hammad Khan",
-    Email: "hammad@test.com",
-    Address: "Tordher",
-    Phone: +923189668328,
-    getUserDetail: function(){
-        return `
-        UserName is ${this.Name}
-        Email of the User is ${this.Email}
-        Address of the User is ${this.Address}
-        and Phone Number of the User is ${this.Phone}`
-    }
+// class User {
+//     constructor(UserName,Address,Password){
+//         this.UserName = UserName;
+//         this.Address = Address;
+//         this.Password = Password;
+//     }
+
+//     encryptPassword(){
+//         return `${this.Password}abc`
+//     }
+
+//     capitalName(){
+//         return `${this.UserName.toUpperCase()}`
+//     }
+// }
+
+// const Hammad = new User("Hammad Khan","Tordher",12345)
+
+// console.log(Hammad.Password)
+
+// console.log(Hammad.encryptPassword())
+
+// console.log(Hammad.capitalName())
+
+
+function User2(UserName,Address,Password){
+    this.UserName = UserName;
+    this.Address = Address;
+    this.Password = Password;
 }
 
-console.log(userData.getUserDetail());
+User2.prototype.encryptPassword = function(){
+    return `${this.Password}werrdf`
+}
 
+User2.prototype.capitalName = function(){
+    return `${this.UserName.toUpperCase()}`
+}
+
+let zeeshan = new User2("Zeeshan","Nabi",22334)
+
+console.log(zeeshan.encryptPassword())
+console.log(zeeshan.capitalName())
