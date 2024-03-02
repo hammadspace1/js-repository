@@ -44,12 +44,12 @@
 </body>
 <script>
     const buttons = document.querySelectorAll(".button");
-    const body = document.querySelector('body')
+    const body = document.querySelector('.main')
 
     buttons.forEach(function(button){
         button.addEventListner('click', function(e){
-            if(e.target.class === 'grey'){
-                body.style.backgroundColor = e.target.id
+            if(e.style.backgroundColor = 'gray'){
+                body.style.backgroundColor = 'e.target.id'
             }
             if(e.target.class === 'blue'){
                 body.style.backgroundColor = e.target.id
@@ -63,7 +63,7 @@
             if(e.target.class === 'green'){
                 body.style.backgroundColor = e.target.id
             }
-        })
+        });
     })
 </script>
 </html>
